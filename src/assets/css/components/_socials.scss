@@ -1,0 +1,20 @@
+ul.socials {
+
+    justify-content: center;
+
+    & > li {
+        margin: 0 .5rem;
+    }
+
+    & > li > a {
+        display: inline-block;
+        color: $lightColor;
+        width: 30px;
+    }
+    
+    & > li > a:hover {
+        color: $primaryColor;
+    }
+
+
+}

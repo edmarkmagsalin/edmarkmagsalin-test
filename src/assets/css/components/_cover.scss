@@ -1,0 +1,37 @@
+.cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    padding-top: $fixTopNavHeight;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    flex-basis: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/images/desktop-banner.webp');
+
+    @media(max-width: $md) {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/images/mobile-banner.webp');
+    }
+
+    & h1 {
+        text-shadow: 5px 5px 5px transparentize($darkColor, .85);
+    }
+
+    & p {
+        margin-top: 0;
+        color: $primaryColor;
+        font-weight: 400;
+    }
+
+    & a {
+        display: inline-block;
+    }
+
+    & .wave {
+        position: absolute;
+        bottom: 0;
+        color: $lightColor;
+    }
+}

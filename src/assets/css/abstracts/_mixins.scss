@@ -1,0 +1,11 @@
+@mixin focus {
+    outline-color: $primaryColor;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+@mixin flexWrapCenter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

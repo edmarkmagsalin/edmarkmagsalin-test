@@ -1,0 +1,49 @@
+.toggles [type=checkbox] {
+    position: absolute;
+    opacity: 0;
+
+    & + label {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 3rem;
+        height: 1.5rem;
+    }
+    
+    & + label::before,
+    & + label::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        transition: left $fastDuration ease-in;
+    }
+
+    // background
+    & + label::before {
+        width: 100%;
+        background-color: $lightColor;
+        border-radius: 1.1rem;
+        box-shadow: inset 0px 0px 2px 0px;
+    }
+
+    // slider
+    & + label::after {
+        left: 0;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 50%;
+        transform: scale(0.8);
+        box-shadow: 1px 1px 5px 1px $darkColor;
+    }
+    &:checked + label::after {
+        left: 50%;
+    }
+    &:checked + label::before {
+        background-color: $darkColor;
+    }
+
+    &:focus + label::before,
+    &:hover + label::before {
+        @include focus;
+    }
+}

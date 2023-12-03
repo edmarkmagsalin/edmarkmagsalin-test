@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+$primaryColor: #3a678c;
+$secondaryColor: adjust-hue($primaryColor, 180deg);
+
+$goColor: #52aa52;
+$readyColor: #b67c4d;
+$stopColor: #e93a3a;
+
+$darkColor: lighten(#000000, 15);
+$grayColor: #707070;
+$lightColor: darken(#FFFFFF, 0);
+
+$slowestDuration: 2s;
+$slowDuration: 1s;
+$normalDuration: .5s;
+$fastDuration: .3s;
+$fastestDuration: .2s;
+
+$fixTopNavHeight: 80px;
+$fixBottomNavHeight: 60px;
+
+$spacing: 1rem;
+
+// screen sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+:root,
+[data-theme=default] {
+  --backgroundColor: #{$lightColor};
+  --color: #{$grayColor};
+}
+[data-theme=dark] {
+  --backgroundColor: #{$darkColor};
+  --color: #{$lightColor};
+}

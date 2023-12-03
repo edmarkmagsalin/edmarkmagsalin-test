@@ -1,0 +1,23 @@
+.icon {
+    background-color: $primaryColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+    @media(max-width: $sm) {
+        margin: 0 auto;
+        margin-bottom: .5rem;
+    }
+
+    & > svg {
+        color: $lightColor;
+        position: absolute;
+        width: 20px;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,24 @@
+.project {
+    width: 95%;
+    color: $lightColor;
+    padding: 2rem 1rem;
+    box-shadow: 5px 5px 5px $grayColor;
+    background: linear-gradient(45deg, $primaryColor, transparentize($grayColor, .75));
+    
+    & img {
+        width: 100%;
+        height: auto;
+        max-width: 460px;
+        @media(max-width: $md) {
+            display: block;
+            margin: 0 auto;
+        }
+        border: 2px solid #ecdc1d;
+    }
+
+    & h3 {
+        @media(max-width: $md) {
+            text-align: center;
+        }
+    }
+}

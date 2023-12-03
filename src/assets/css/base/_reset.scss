@@ -1,0 +1,98 @@
+ /* RESET : BEGIN */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-variant: no-common-ligatures;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color);
+    background-color: var(--backgroundColor);
+    transition: all $fastDuration ease-in-out;
+
+    & > div {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h1 {
+    color: $primaryColor;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    @media (max-width: $md) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    color: $primaryColor;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    @media (max-width: $md) {
+        font-size: 3rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+section, nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & > * {
+        flex-basis: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $primaryColor;
+    transition: color $normalDuration ease-out;
+    &:hover {
+        color: lighten($primaryColor, 5);
+    }
+}
+
+:focus {
+    @include focus;
+}
+
+::selection {
+    background-color: $primaryColor;
+    color: $lightColor;
+}
+
+textarea {
+    height: 150px;
+    font-family: inherit;
+    resize: none;
+}
+ /* RESET : END */

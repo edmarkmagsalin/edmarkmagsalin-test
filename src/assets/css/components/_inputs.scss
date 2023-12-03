@@ -1,0 +1,156 @@
+// text boxes
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=month],
+input[type=week],
+input[type=date],
+input[type=time],
+textarea
+{
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem 1rem .8rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: var(--color);
+    border: 2px solid $primaryColor;
+    transition: border $fastDuration ease-in-out;
+
+    &:focus {
+        outline: transparent;
+        border: 2px solid $primaryColor;
+        caret-color: $primaryColor;
+    }
+
+    &.pass {
+        border: 2px solid $goColor;
+        background-color: transparentize($goColor, .8);
+    }
+
+    &.error {
+        border: 2px solid $stopColor;
+        background-color: transparentize($stopColor, .8);
+    }
+}
+
+//checkbox
+input[type=checkbox],
+input[type=radio] {
+    width: 1rem;
+    height: 1rem;
+}
+
+// buttons
+.btn,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+    display: inline-block;
+    border: 5px solid $primaryColor;
+    color: $lightColor;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    max-width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+
+    &.btn-primary {
+        background-color: $primaryColor;
+        position: relative;
+        padding-right: 3rem;
+    }
+
+    &.btn-primary:hover {
+        background-color: lighten($primaryColor, 5);
+        border-color: lighten($primaryColor, 5);
+        color: $lightColor;
+    }
+
+    &.btn-primary::after {
+        content: '>';
+        position: absolute;
+        transition: ease-out $fastDuration;
+        right: 1.8rem;
+    }
+
+    &.btn-primary:hover::after {
+        right: 1.5rem;
+    }
+
+    &.btn-secondary {
+        background-color: $lightColor;
+        position: relative;
+        padding-right: 3rem;
+        color: $primaryColor;
+    }
+
+    &.btn-secondary:hover {
+        border-color: lighten($primaryColor, 5);
+    }
+
+    &.btn-secondary::after {
+        content: '>';
+        position: absolute;
+        transition: ease-out $fastDuration;
+        right: 1.8rem;
+    }
+
+    &.btn-secondary:hover::after {
+        right: 1.5rem;
+    }
+
+    &.btn-tertiary {
+        border: 0;
+        padding: 0;
+        position: relative;
+        padding-right: 3rem;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+
+    &.btn-tertiary::after {
+        content: '>';
+        position: absolute;
+        transition: ease-out $fastDuration;
+        right: 1.8rem;
+    }
+
+    &.btn-tertiary:hover::after {
+        right: 1.5rem;
+    }
+}
+
+input[type=checkbox],
+input[type=radio] {
+    cursor: pointer;
+}
+
+.labeled-input {
+    position: relative;
+
+    & > label {
+        position: absolute;
+        left: 1rem;
+        top: .8rem;
+        font-size: .6rem;
+        opacity: 1;
+        cursor: default;
+        transition: all $fastDuration ease-in-out;
+    }
+
+    & > input[type=text].place-label + label,
+    & > input[type=email].place-label + label,
+    & > input[type=password].place-label + label,
+    & > input[type=number].place-label + label,
+    & > textarea.place-label + label {
+        top: 1.6rem;
+        font-size: 1.2rem;
+        opacity: 0.5;
+        cursor: text;
+    }
+}
