@@ -35,7 +35,6 @@ const Contact = () => {
 
         function validateNullFields(fields: any) {
             // triggered by submission
-            console.log({fields});
             fields.forEach((field: any) => {
                 if(field.value) {
                     // handle pass
