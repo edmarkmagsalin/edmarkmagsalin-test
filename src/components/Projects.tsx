@@ -211,7 +211,7 @@ const Projects = () => {
                                         <div className="col-sm-12 col-lg-7">
                                             <h4>MERN CRUD Bare Minimum</h4>
                                             <p className="lead">
-                                                This is a demon of Create, Read, Update and Delete (CRUD) using <strong>MERN</strong> stack. I also added account management using <strong>JSON Web Tokens</strong> for authorization.
+                                                This is a demonstration of Create, Read, Update and Delete (CRUD) using <strong>MERN</strong> stack. I also added account management using <strong>JSON Web Tokens</strong> for authorization.
                                             </p>
                                             <p>
                                                 Powered by: MongoDB, Express, React, Node.js
