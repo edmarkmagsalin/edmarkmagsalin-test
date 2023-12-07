@@ -2,8 +2,15 @@ import React, { Fragment, useEffect } from 'react'
 import contactKeeper from '../assets/images/thumbnails/contact-keeper.png'
 import githubFinder from '../assets/images/thumbnails/github-finder.png'
 import MERNCRUD from '../assets/images/thumbnails/mern-crud-bare-minimum.png'
+import elsevier from '../assets/images/thumbnails/elsevier.jpg'
+import lexisnexis from '../assets/images/thumbnails/lexisnexis.jpg'
+import tolley from '../assets/images/thumbnails/tolley.jpg'
 
 const Projects = () => {
+    const currentlyFixingAlert = (e: any) => {
+        e.preventDefault();
+        alert('My Apologies. I\'m currently fixing the link for this project');
+    }
     useEffect(() => {
         const slider: any = document.querySelector('.carousel__slider');
         const prevButton: any = document.querySelector('#prev');
@@ -80,6 +87,77 @@ const Projects = () => {
 
                         <div className="carousel__slider">
 
+
+                        <div className="carousel__item">
+                                <div className="project">
+                                    <div className="row">
+                                        <div className="col-sm-12 col-lg-5 pb-1">
+                                            <img src={lexisnexis} alt="LexisNexis UK" />
+                                        </div>
+                                        <div className="col-sm-12 col-lg-7">
+                                            <h4>LexisNexis UK</h4>
+                                            <p className="lead">
+                                                A project that I've worked on before for LexisNexis UK using TeamSite (CMS)
+                                            </p>
+                                            <p>
+                                                Powered by: TeamSite, Vanilla JavaScript
+                                            </p>
+                                            <p>
+                                                <a href="https://www.lexisnexis.co.uk/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div className="carousel__item">
+                                <div className="project">
+                                    <div className="row">
+                                        <div className="col-sm-12 col-lg-5 pb-1">
+                                            <img src={tolley} alt="Tolley UK" />
+                                        </div>
+                                        <div className="col-sm-12 col-lg-7">
+                                            <h4>Tolley UK</h4>
+                                            <p className="lead">
+                                                A project that I've worked on before for Tolley UK using SquizMatrix (CMS)
+                                            </p>
+                                            <p>
+                                                Powered by: SquizMatrix, Vanilla JavaScript
+                                            </p>
+                                            <p>
+                                                <a href="https://www.tolley.co.uk/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div className="carousel__item">
+                                <div className="project">
+                                    <div className="row">
+                                        <div className="col-sm-12 col-lg-5 pb-1">
+                                            <img src={elsevier} alt="Elsevier" />
+                                        </div>
+                                        <div className="col-sm-12 col-lg-7">
+                                            <h4>Elsevier</h4>
+                                            <p className="lead">
+                                                A project that I've worked on before for Elsevier using SquizMatrix (CMS)
+                                            </p>
+                                            <p>
+                                                Powered by: SquizMatrix, Vanilla JavaScript
+                                            </p>
+                                            <p>
+                                                <a href="https://edmarkmagsalin-contact-keeper.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="carousel__item">
                                 <div className="project">
                                     <div className="row">
@@ -95,7 +173,7 @@ const Projects = () => {
                                                 Powered by: MongoDB, Express, React, Node.js
                                             </p>
                                             <p>
-                                                <a href="https://edmarkmagsalin-contact-keeper.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                                <a onClick={currentlyFixingAlert} href="https://edmarkmagsalin-contact-keeper.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
                                             </p>
                                         </div>
                                     </div>
@@ -139,7 +217,7 @@ const Projects = () => {
                                                 Powered by: MongoDB, Express, React, Node.js
                                             </p>
                                             <p>
-                                                <a href="https://mern-crud-bare-minimum.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                                <a onClick={currentlyFixingAlert} href="https://mern-crud-bare-minimum.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
                                             </p>
                                         </div>
                                     </div>

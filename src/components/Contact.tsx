@@ -70,10 +70,12 @@ const Contact = () => {
             validateNullFields(requiredFields);
             if(isSuccess) {
                 const successMessage = setInterval(() => {
-                    alert('Your message is successfully sent 😉');
+                    // alert('Your message is successfully sent 😉');
+                    alert('NOTE: This contact form isn\'t functional yet and didn\'t sent any email ✌️');
                     clearInterval(successMessage);
                 }, 1000);
             } else {
+                // alert('Something went wrong 😥');
                 alert('Something went wrong 😥');
             }
         });
