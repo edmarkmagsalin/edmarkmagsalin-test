@@ -151,7 +151,7 @@ const Projects = () => {
                                                 Powered by: SquizMatrix, Vanilla JavaScript
                                             </p>
                                             <p>
-                                                <a href="https://edmarkmagsalin-contact-keeper.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
+                                                <a href="https://www.elsevier.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Visit this project</a>
                                             </p>
                                         </div>
                                     </div>
