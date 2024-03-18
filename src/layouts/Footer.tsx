@@ -31,7 +31,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <p className="disclaimer">
-                    Copyright &copy; 2023 Edmark Magsalin
+                    Copyright &copy; 2024 Edmark Magsalin
                 </p>
             </div>
         </section>
